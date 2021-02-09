@@ -47,6 +47,7 @@
      }
      &:hover{
        font-weight: 600;
+
        border-bottom: 3px solid #79be32;
        
      }
@@ -69,6 +70,306 @@
     }
   }
 }
+
+
+
+.parasite{
+  &__slider{
+    
+    &-content{
+      display: flex;
+      justify-content: space-between;
+    }
+    &-img{
+      background-image: url('../images/slider_bg.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 770px;
+      max-width: 860px;
+      width: 100%;
+      display: block;
+    }
+    &-box{
+      background-color: #f5fce3;
+      max-width: 1060px;
+      width: 100%;
+      
+    }
+    &-inner{
+      margin-top: 150px;
+      margin-left: 110px;
+      
+    }
+    &-title{
+      @extend %rubik-700;
+      font-size: 72px;
+      line-height: 35px;
+      color: #2d3691;
+      margin-bottom: 50px;
+    }
+    &-subtitle{
+      @extend %opensans-600;
+      font-size: 22px;
+      line-height: 40px;
+      color: #f9aa12;
+      margin-bottom: 55px;
+      margin-left: 90px;
+      text-transform: uppercase;
+      position: relative;
+        &::before{
+          content: '';
+          position: absolute;
+          background-image: url('../images/slider_line.png');
+          height: 2px;
+          width: 45px;
+          top: 22px;
+          left: -90px;
+        }
+    }
+    &-text{
+      @extend %opensans-600;
+      font-size: 15px;
+      line-height: 38px;
+      color: #2d3691;
+      max-width: 545px;
+      text-align: left;
+      margin-bottom: 100px;
+      
+    }
+    &-link{
+      @extend %rubik-500;
+      font-size: 15px;
+      color: #79be32;
+      margin-left: -50px;
+      text-transform: uppercase;
+      position: relative;
+      outline: none;
+      &::after{
+        position: absolute;
+        content: '';
+        background-image: url('../images/link-arrow.png');
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 18px;
+        top: 30px;
+        left: 30px;
+      }
+    }
+    
+  }
+
+  .slick-dots{
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    background-image: url('../images/dots-bg.png');
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    button{
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    padding: 10px;
+    @extend %rubik-400;
+    font-size: 15px;
+    }
+    
+  }
+  
+  .slick-active{
+    button{
+    @extend %rubik-700;
+    color: #000;
+    border-right: 2px solid #fff;
+    }
+  }
+}
+
+
+.fito{
+  padding: 250px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box{
+    max-width: 550px;
+  }
+  &__title{
+     @extend %rubik-700;
+      font-size: 36px;
+      line-height: 35px;
+      color: #2d3691;
+      margin-bottom: 60px;
+  }
+  &__subtitle{
+     @extend %opensans-700;
+      font-size: 18px;
+      line-height: 40px;
+      color: #f9aa12;
+      margin-bottom: 50px;
+      margin-left: 80px;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../images/slider_line.png');
+          height: 2px;
+          width: 45px;
+          top: 22px;
+          left: -77px;
+      }
+  }
+  &__text{
+     @extend %opensans-600;
+      font-size: 15px;
+      line-height: 38px;
+      color: #2d3691;
+      margin-bottom: 40px;
+      margin-left: 45px;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        background-image: url('../images/fito-arrow.png');
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 20px;
+        top: 10px;
+        left: -42px;
+      }
+  }
+  &__btn{
+    padding: 30px 145px;
+    @extend %rubik-500;
+      font-size: 15px;
+      line-height: 35px;
+      color: #fff;
+      text-transform: uppercase;
+      background-color: #79be32;
+      border: none;
+      outline: none;
+  }
+}
+
+
+.aldenbazol{
+  &__slider{
+    &-content{
+      display: flex;
+      justify-content: space-between;
+    }
+    &-img{
+      background-image: url('../images/aldenbazol-bg.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 700px;
+      max-width: 1060px;
+      width: 100%;
+      display: block;
+    }
+    &-box{
+      background-image: url('../images/aldenbazol-grey.jpg');
+      max-width: 860px;
+      height: 700px;
+      width: 100%;
+    }
+    &-inner{
+      margin-top: 210px;
+      margin-left: 320px;
+    }
+    &-title{
+      @extend %rubik-700;
+      font-size: 62px;
+      line-height: 60px;
+      color: #f9aa12;
+      margin-bottom: 45px;
+    }
+    &-subtitle{
+      @extend %opensans-700;
+      font-size: 37px;
+      line-height: 60px;
+      color: #2d3691;
+      margin-bottom: 55px;
+      margin-left: 50px;
+      position: relative;
+        &::before{
+          content: '';
+          position: absolute;
+          background-image: url('../images/aldenbazol-cross.png');
+          height: 36px;
+          width: 36px;
+          top: 10px;
+          left: -50px;
+        }
+    }
+    &-text{
+      @extend %opensans-600;
+      font-size: 15px;
+      line-height: 38px;
+      color: #2d3691;
+      max-width: 415px;
+      text-align: left;
+      margin-bottom: 100px;
+      position: relative;
+    }
+  }
+
+.slick-dots{
+    position: absolute;
+    bottom: 0;
+    left: 860px;
+    background-image: url('../images/dots-bg.png');
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    button{
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    padding: 10px;
+    @extend %rubik-400;
+    font-size: 15px;
+    }
+    
+  }
+  
+  .slick-active{
+    button{
+    @extend %rubik-700;
+    color: #000;
+    border-left: 2px solid #fff;
+    }
+  }
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
