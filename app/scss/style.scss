@@ -325,7 +325,7 @@
 .slick-dots{
     position: absolute;
     bottom: 0;
-    left: 860px;
+    right:calc(47%);
     background-image: url('../images/dots-bg.png');
     height: 150px;
     width: 150px;
@@ -352,15 +352,157 @@
     border-left: 2px solid #fff;
     }
   }
-
-
-  
 }
 
 
+.test{
+  padding: 120px 0 100px 0;
+  background-image: url('../images/test-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+
+ 
+  &__title{
+    @extend %rubik-700;
+    font-size: 36px;
+    line-height: 40px;
+    color: #2d3691;
+    margin-bottom: 60px;
+  }
+  &__text{
+     @extend %opensans-400;
+    font-size: 18px;
+    line-height: 40px;
+    color: #2d3691;
+    max-width: 810px;
+    margin: 0 auto;
+    padding: 60px 70px 96px 70px;
+    background-image: url('../images/test-forma.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    span{
+      @extend %opensans-700it;
+    }
+  }
+  &__btn{
+    padding: 30px 65px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #2d3691;
+    @extend %rubik-500;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    max-width: 240px;
+    margin: 0 auto;
+    margin-top: -50px;
+  }
+}
+
+.profilactic{
+  padding: 160px 0;
+  text-align: center;
+  &__title{
+     @extend %rubik-700;
+      font-size: 70px;
+      line-height: 40px;
+      color: #2d3691;
+      margin-bottom: 50px;
+  }
+  &__subtitle{
+    @extend %opensans-400;
+    font-size: 18px;
+    line-height: 40px;
+    color: #b2b2b2;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+  }
+  &__slider{
+    background-image: url('../images/profilactic-slider-bg.jpg');
+   
+    &-item{
+     max-width: 1120px;
+     margin: 0 auto;
+     position: relative;  
+    }
+    &-content{
+      display: flex;
+      justify-content: space-between;
+      
+    }
+    &-text{
+      @extend %opensans-600it;
+      font-size: 18px;
+    line-height: 35px;
+    color: #2d3691;
+    max-width: 315px;
+    margin-top: 130px;
+    
+    
+    }
+  }
+
+  .slick-dots{
+    display: flex;
+    position: absolute;
+    left: calc(24.5%);
+    bottom: 45px;
+    button{
+      outline: none;
+      border: none;
+      border-radius: 50%;
+      font-size: 0;
+      height: 11px;
+      width: 8px;
+      background-color: #85c444;
+      margin: 0 13px;
+    }
+    
+  }
+
+  .slick-active{
+    button{
+      height: 16px;
+      width: 16px;
+      background-color: #f9aa12;
+    }
+  }
+
+  .slick-prev{
+    position: absolute;
+    left: 14%;
+    top: 44%;
+    border: none;
+    outline: none;
+    font-size: 0;
+    background-image: url('../images/profilactic-left.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    width: 45px;
+    background-color: transparent;
+    z-index: 10;
+  }
+  .slick-next{
+    position: absolute;
+    right: 22%;
+    top: 44%;
+    border: none;
+    outline: none;
+    font-size: 0;
+    background-image: url('../images/profilactic-right.png');
+    background-repeat: no-repeat;
+        background-position: center;
+    height: 60px;
+    width: 45px;
+    background-color: transparent;
+  }
 
 
-
+}
 
 
 

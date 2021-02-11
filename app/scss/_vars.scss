@@ -30,9 +30,21 @@ $title:#2d3691;
     font-weight: 600;
 }
 
+%opensans-400 {
+    font-family: 'OpenSans-Regular';
+    font-weight: 400;
+}
 %opensans-700 {
     font-family: 'OpenSans-Bold';
     font-weight: 700;
+}
+%opensans-700it {
+    font-family: 'OpenSans-BoldItalic';
+    font-weight: 700;
+}
+%opensans-600it {
+    font-family: 'OpenSans-SemiBoldItalic';
+    font-weight: 600;
 }
 
 // %checkbox-hiden {
