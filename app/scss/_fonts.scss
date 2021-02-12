@@ -78,3 +78,12 @@
     src: url('../fonts/OpenSans-BoldItalic.woff2') format('woff2'),
          url('../fonts/OpenSans-BoldItalic.woff') format('woff');    
 }
+
+@font-face {
+    font-family: 'OpenSans-ExtraBold';
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+         url('../fonts/OpenSans-Bold.woff') format('woff');    
+}

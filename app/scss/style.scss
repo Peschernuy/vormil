@@ -664,6 +664,71 @@
 }
 
 
+.questions{
+padding-bottom: 150px;
+  &__title{
+    @extend %rubik-700;
+    font-size: 70px;
+    line-height: 70px;
+    color: #2d3691;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__subtitle{
+     @extend %opensans-400;
+    font-size: 18px;
+    line-height: 40px;
+    color: #333333; 
+    text-align: center;
+    margin-bottom: 80px;
+  }
+
+  .accordion{
+    padding: 65px 0 70px 0;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+    
+    &-header{
+     @extend %opensans-800;
+    font-size: 36px;
+    line-height: 85px;
+    color: #cccccc; 
+    margin-left: 190px;
+    cursor: pointer;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/questions-cross.png');
+      background-repeat: no-repeat;
+      width: 27px;
+      height: 27px;
+      top: 30px;
+      left: -85px;
+      cursor: pointer; 
+      }
+    }
+    &-body{
+    @extend %opensans-400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #333333; 
+    max-width: 900px;
+    margin-left: 190px;
+    display: none;
+   
+
+    }
+    .active{
+        color: #f9aa12;
+        &::before{
+          background-image: url('../images/questions-minus.png');
+          top: 42px;
+        }
+    }
+  }
+}
 
 
 
