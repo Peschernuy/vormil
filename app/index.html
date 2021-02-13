@@ -10,7 +10,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <div class="header__inner">
         <a class="logo" href="#">
@@ -19,19 +19,19 @@
         <nav class="menu">
           <ul class="menu__list">
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Вормил Фито</a>
+              <a class="menu__list-link" href="#fito">Вормил Фито</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">О Продукте</a>
+              <a class="menu__list-link" href="#product">О Продукте</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Что за Паразиты?</a>
+              <a class="menu__list-link" href="#parasite">Что за Паразиты?</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Важно Знать</a>
+              <a class="menu__list-link" href="#important">Важно Знать</a>
             </li>
             <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Говорят Врачи</a>
+              <a class="menu__list-link" href="#doctors">Говорят Врачи</a>
             </li>
           </ul>
           <div class="menu__select">
@@ -45,7 +45,7 @@
 
 
 
-  <section class="parasite">
+  <section class="parasite" >
     <div class="container-big">
       <div class="parasite__slider">
 
@@ -110,7 +110,7 @@
     </div>
   </section>
 
-  <section class="fito">
+  <section class="fito" id="fito">
     <div class="container">
       <div class="fito__inner">
         <div class="fito__box">
@@ -132,7 +132,7 @@
 
 
 
-  <section class="aldenbazol">
+  <section class="aldenbazol" id="product">
     <div class="container-big">
       <div class="aldenbazol__slider">
 
@@ -195,7 +195,7 @@
   </section>
 
 
-  <section class="test">
+  <section class="test" id="parasite">
     <div class="test__inner">
       <h4 class="test__title">Тест на Паразитов</h4>
       <p class="test__text">Если у вас возникли <span>подозрения по поводу наличия гельминтов,</span> но перед
@@ -206,7 +206,7 @@
 
   </section>
 
-  <section class="profilactic">
+  <section class="profilactic" id="important">
     <div class="container-big">
       <h3 class="profilactic__title">Профилактика</h3>
       <p class="profilactic__subtitle">Главная задача профилактики - избежать рецидива гельминтозов. Для этого нужно
@@ -252,7 +252,7 @@
   </section>
 
 
-  <section class="doctors">
+  <section class="doctors" id="doctors">
     <div class="container-big">
       <h4 class="doctors__title">Говорят Врачи</h4>
       <div class="doctors__inner">
@@ -407,8 +407,8 @@
 
   <section class="reviews">
     <div class="container-big">
-      <div class="reviews__title">Отзывы</div>
-      <div class="reviews__subtitle">Тут мы собрали отзывы наших довольных клиентов</div>
+      <h4 class="reviews__title">Отзывы</h4>
+      <p class="reviews__subtitle">Тут мы собрали отзывы наших довольных клиентов</p>
 
       <div class="reviews__slider">
 
@@ -504,27 +504,29 @@
       <div class="footer__nav">
         <ul class="footer__list">
           <li class="footer__list-item footer__list-first">
-            <a class="footer__list-link" href="#">Вормил Фито</a>
+            <a class="footer__list-link" href="#fito">Вормил Фито</a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link" href="#">О Продукте</a>
+            <a class="footer__list-link" href="#product">О Продукте</a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Что за Паразиты?</a>
+            <a class="footer__list-link" href="#parasite">Что за Паразиты?</a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link" href="#">Важно Знать</a>
+            <a class="footer__list-link" href="#important">Важно Знать</a>
           </li>
           <li class="footer__list-item">
-            <a class="footer__list-link footer__list-last" href="#">Говорят Врачи</a>
+            <a class="footer__list-link footer__list-last" href="#doctors">Говорят Врачи</a>
           </li>
         </ul>
-        <button class="footer__btn">Вверх</button>
+        <a class="footer__link" href="#header" >
+        <button class="footer__btn" >Вверх</button>
+        </a>
       </div>
 
       <div class="footer__copyright">
         <p class="footer__copyright-text-1">Mili Healthcare Ltd. Great Britain</p>
-        <p class="footer__copyright-text-2">© 2018 Вормил - Фито. Все права защищены.</p>
+        <p class="footer__copyright-text-2">© 2020 Вормил - Фито. Все права защищены.</p>
       </div>
 
     </div>
