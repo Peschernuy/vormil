@@ -731,6 +731,232 @@ padding-bottom: 150px;
 }
 
 
+.reviews{
+  text-align: center;
+  padding-bottom: 260px;
+  border-bottom: 1px solid #2d3691;
+  &__title{
+    @extend %rubik-700;
+    font-size: 70px;
+    line-height: 70px;
+    color: #2d3691;
+    margin-bottom: 70px;
+  }
+  &__subtitle{
+    @extend %rubik-400;
+    font-size: 18px;
+    line-height: 40px;
+    color: #f9aa12;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+  }
+  &__slider{
+
+    &-item{
+      padding-top: 70px; 
+    }
+    &-content{
+       background-image: url('../images/reviews-bg.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      max-width: 1080px;
+      width: 100%;
+      height: 390px;
+      position: relative;
+      margin: 0 auto;
+    }
+    &-img{
+      position: absolute;
+      margin: 0 auto;
+      top: -65px;
+      left: 45%;
+      border: 10px solid #fff;
+      border-radius: 50%;
+    }
+    &-text{
+      max-width: 875px;
+      margin: 0 auto;
+      padding-top: 125px;
+      @extend %opensans-400it;
+      font-size: 18px;
+      line-height: 40px;
+      color: #333333;
+      margin-bottom: 30px;
+    }
+    &-name{
+      margin: 0 auto;
+      @extend %rubik-400;
+     font-size: 18px;
+     line-height: 40px;
+     color: #2d3691;
+    }
+  }
+
+.slick-dots{
+  position: absolute;
+  display: flex;
+  bottom: -60px;
+  right: 43%;
+  button{
+      outline: none;
+      border: none;
+      border-radius: 50%;
+      font-size: 0;
+      height: 11px;
+      width: 8px;
+      background-color: #85c444;
+      margin: 0 13px;
+    }
+ }
+
+ .slick-active{
+    button{
+      height: 16px;
+      width: 16px;
+      background-color: #f9aa12;
+    }
+  }
+
+ .slick-prev{
+   position: absolute;
+   left: 18%;
+   top: 50%;
+   border: none;
+    outline: none;
+    font-size: 0;
+    background-image: url('../images/reviews-left.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    width: 45px;
+    background-color: transparent;
+    z-index: 10;
+   
+ }
+ .slick-next{
+   position: absolute;
+   right: 18%;
+   top: 50%;
+   border: none;
+    outline: none;
+    font-size: 0;
+    background-image: url('../images/reviews-right.png');
+    background-repeat: no-repeat;
+        background-position: center;
+    height: 60px;
+    width: 45px;
+    background-color: transparent;
+ }
+
+
+
+
+}
+
+
+
+.footer{
+  padding: 70px 0 50px 0;
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    border-bottom: 1px dashed #79be32;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    max-width: 880px;
+    width: 100%;
+    &-item{
+    margin: 0 30px;
+   }
+   &-link{
+     @extend %rubik-400;
+     text-transform: uppercase;
+     font-size: 15px;
+     line-height: 35px;
+     color: $title;
+     position: relative;
+     &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/dot.png');
+      background-repeat: no-repeat;
+      width: 4px;
+      height: 4px;
+      top: 6px;
+      right: -30px;
+     }
+     &:hover{
+       font-weight: 600;
+     }
+   }
+  }
+  &__btn{
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    @extend %opensans-600;
+    font-size: 15px;
+    line-height: 35px;
+    color: #79be32;
+    position: relative;
+    padding-right: 60px;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/slider_line.png');
+      height: 2px;
+      width: 45px;
+      top: 18px;
+      right: 0;
+    }
+  }
+  &__copyright{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    &-text-1{
+    @extend %opensans-400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000; 
+    }
+    &-text-2{
+      padding-right: 60px;
+      @extend %opensans-400;
+    font-size: 15px;
+    line-height: 30px;
+    color: #000;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      background-image: url('../images/copyright-icon.png');
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 20px;
+      top: 4px;
+      right: 0;
+    }
+    }
+  }
+}
+
+.footer__list-first{
+  margin-left: 10px;
+}
+
+.footer__list-last{
+  &::after{
+    background-image: none;
+  }
+}
+
+
+
 
 
 
