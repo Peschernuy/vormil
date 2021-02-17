@@ -91,10 +91,17 @@
         margin-bottom: 80px;
       }
       &-link{
-        margin-left: 0;
+        margin-left: 35%;
         display: block;
         margin-bottom: 50px;
         
+      }
+    }
+  }
+  .aldenbazol{
+    &__slider{
+      &-img{
+        display: none;
       }
     }
   }
@@ -124,6 +131,38 @@
       &-text{
         max-width: 450px;
       }
+    }
+    .slick-dots{
+      width: 100px;
+    }
+  }
+  .aldenbazol{
+    &__slider{
+      &-inner{
+        margin: 170px auto;
+        padding: 0 10px;
+      }
+      &-title{
+        font-size: 50px;
+        margin-bottom: 35px;
+      }
+      &-subtitle{
+        font-size: 32px;
+      }
+      &-text{
+        margin-bottom: 35px;
+      }
+    }
+    .slick-dots{
+      width: 100px;
+    }
+  }
+
+  .test{
+    padding: 70px 0;
+    &__title{}
+    &__text{
+     padding: 30px 30px 60px 30px;
     }
   }
 }
@@ -177,28 +216,86 @@
   }
     .parasite{
     &__slider{
+      &-box{
+        text-align: center;
+      }
       &-title{
         font-size: 45px;
         margin-bottom: 30px;
       }
       &-subtitle{
-        margin-bottom: 25px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        &::before{
+          display: none;
+        }
       }
       &-img{
         display: none;
       }
       &-inner{
-        margin-left: 10%;
+        margin: 0 auto;
+        padding: 0 10px;
       }
       &-text{
         margin-bottom: 80px;
+        text-align: center;
       }
       &-link{
         display: block;
-        margin-left: 130px;
+        margin-left: 30px;
         margin-bottom: 50px;
+        &::after{
+          left: 45%;
+        }
         
       }
+    }
+  }
+
+  .aldenbazol{
+    &__slider{
+      &-box{
+        height: 600px;
+      }
+      &-inner{
+        margin: 100px auto;
+        padding: 0 10px;
+      }
+      &-title{
+        font-size: 40px;
+        margin-bottom: 35px;
+        text-align: center;
+      }
+      &-subtitle{
+        font-size: 25px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        text-align: center;
+        &::before{
+          display: none;
+        }
+      }
+      &-text{
+        margin-bottom: 35px;
+        text-align: center;
+      }
+    }
+    .slick-dots{
+      width: 100px;
+    }
+  }
+
+  .test{
+    padding: 70px 0;
+    &__title{
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+    &__text{
+     padding: 30px 10px 60px 10px;
+     font-size: 15px;
+     line-height: 30px;
     }
   }
 }

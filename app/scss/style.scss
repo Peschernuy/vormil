@@ -267,6 +267,7 @@
     &-content{
       display: flex;
       justify-content: space-between;
+ 
     }
     &-img{
       background-image: url('../images/aldenbazol-bg.jpg');
@@ -280,13 +281,16 @@
     }
     &-box{
       background-image: url('../images/aldenbazol-grey.jpg');
-      max-width: 860px;
+      max-width: 1000px;
       height: 700px;
       width: 100%;
+      position: relative;
+   
     }
     &-inner{
-      margin-top: 210px;
-      margin-left: 320px;
+      display: block;
+      max-width: 430px;
+      margin: 210px auto;
     }
     &-title{
       @extend %rubik-700;
@@ -294,6 +298,7 @@
       line-height: 60px;
       color: #f9aa12;
       margin-bottom: 45px;
+      
     }
     &-subtitle{
       @extend %opensans-700;
@@ -309,7 +314,7 @@
           background-image: url('../images/aldenbazol-cross.png');
           height: 36px;
           width: 36px;
-          top: 10px;
+          top: 12px;
           left: -50px;
         }
     }
@@ -321,14 +326,13 @@
       max-width: 415px;
       text-align: left;
       margin-bottom: 100px;
-      position: relative;
     }
   }
 
 .slick-dots{
     position: absolute;
     bottom: 0;
-    right:calc(47%);
+    left: 0;
     background-image: url('../images/dots-bg.png');
     height: 150px;
     width: 150px;
