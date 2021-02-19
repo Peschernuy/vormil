@@ -445,10 +445,14 @@
       font-size: 18px;
     line-height: 35px;
     color: #2d3691;
-    max-width: 315px;
+    max-width: 325px;
     margin-top: 130px;
+    padding: 0 5px;
     
-    
+    }
+    &-img{
+      max-width: 630px;
+      height: 350px;
     }
   }
 

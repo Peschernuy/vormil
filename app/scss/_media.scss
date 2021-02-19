@@ -22,6 +22,67 @@
   }
 }
 
+.profilactic{
+  &__slider{
+    &-content{
+      justify-content: space-evenly;
+    }
+    &-text{
+      padding-left: 20px;
+    }
+    
+  }
+  .slick-prev{
+    left: 1%;
+  }
+  .slick-next{
+    right: 1%;
+  }
+  .slick-dots{
+    left: 10%;
+  }
+}
+
+.doctors{
+  &__inner{
+    flex-direction: column;
+    padding: 0 5px;
+   align-items: center;
+  }
+  &__box{
+   &-title{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+   &-subtitle{
+     margin: 45px auto;
+     text-align: center;
+   }
+   &-text{
+     margin: 45px auto;
+     text-align: center;
+   }
+   &-btn{
+     margin: 0 auto;
+     display: block;
+   }
+  }
+}
+
+.reviews{
+  .slick-next,.slick-prev{
+    display: none;
+  }
+  &__slider{
+    &-content{
+      max-width: 800px;
+    }
+    &-text{
+      max-width: 630px;
+    }
+  }
+}
 }
 
 @media(max-width: 1200px){
@@ -105,6 +166,113 @@
       }
     }
   }
+
+
+  .profilactic{
+    padding: 100px 0;
+   &__title{
+     font-size: 50px;
+   }
+   &__subtitle{
+     padding: 0 5px;
+     font-size: 16px;
+   } 
+   &__slider{
+    &-content{
+      justify-content: space-evenly;
+    }
+    &-text{
+      padding: 0 10px;
+      margin: 125px 0;
+    }
+    
+  }
+  .slick-slide img{
+    display: none;
+  }
+
+  .slick-prev{
+    left: 1%;
+  }
+  .slick-next{
+    right: 1%;
+  }
+  .slick-dots{
+    left: 40%;
+  }
+}
+
+.doctors{
+  padding: 100px 0;
+  &__title{
+    font-size: 50px;
+  }
+}
+
+
+.questions{
+  &__title{
+    font-size: 50px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  &__subtitle{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .accordion{
+    padding: 25px 0 30px 0;
+    .active{
+      &::before{
+        top: 30px;
+      }
+    }
+    &-header{
+      font-size: 30px;
+      line-height: 60px;
+      margin-left: 120px;
+      &::before{
+        top: 17px;
+      }
+    }
+    &-body{
+      margin-left: 120px;
+    }
+  }
+}
+
+.reviews{
+  &__title{
+    font-size: 50px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  &__subtitle{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  .slick-dots{
+    right: 37%;
+  }
+}
+
+
+.footer{
+  padding: 35px 5px 35px 5px;
+  &__list{
+    &-item{
+      margin: 0 5px;
+    }
+    &-link{
+      &::after{
+        display: none;
+      }
+    }
+  }
+  
+}
 }
 
 @media(max-width: 750px){
@@ -160,9 +328,101 @@
 
   .test{
     padding: 70px 0;
-    &__title{}
+
     &__text{
      padding: 30px 30px 60px 30px;
+    }
+  }
+  .doctors{
+    padding: 50px 0;
+    &__title{
+      margin-bottom: 45px;
+    }
+    &__slider{
+      background-color: transparent;
+
+      &-content{
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .slick-next{
+      right: 1%;
+    }
+    .slick-prev{
+      left: 1%;
+    }
+    .slick-dots{
+     right: 33%;
+     
+
+
+
+    }
+  }
+
+  .questions{
+    padding-bottom: 75px;
+  &__title{
+    font-size: 50px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+  .accordion{
+    padding: 15px 0 20px 0;
+    .active{
+      &::before{
+        top: 25px;
+      }
+    }
+    &-header{
+      font-size: 24px;
+      line-height: 45px;
+      margin-left: 120px;
+      &::before{
+        top: 12px;
+      }
+    }
+  
+  }
+}
+
+
+.reviews{
+  padding-bottom: 100px;
+ &__slider{
+   &-text{
+     font-size: 15px;
+     line-height: 30px;
+     padding-top: 100px;
+     padding-left: 5px;
+     padding-right: 5px;
+   }
+   &-img{
+     left: 38%;
+   }
+ }
+ .slick-dots{
+   right: 33%;
+ }
+}
+
+  .footer{
+    &__nav{
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 30px;
+    }
+    &__list{
+      flex-direction: column;
+      align-items: center;
+    }
+    &__copyright{
+      flex-direction: column;
+      align-items: center;
+      &-text-1{
+        margin-right: 40px;
+      }
     }
   }
 }
@@ -190,6 +450,21 @@
     &__text{
       font-size: 14px;
       margin-bottom: 20px;
+    }
+  }
+
+  .profilactic{
+    padding: 70px 0;
+    &__title{
+      font-size: 50px;
+    }
+    &__subtitle{
+      font-size: 15px;
+      line-height: 30px;
+      margin-bottom: 40px;
+    }
+    .slick-dots{
+      left: 30%;
     }
   }
 }
@@ -296,6 +571,137 @@
      padding: 30px 10px 60px 10px;
      font-size: 15px;
      line-height: 30px;
+    }
+  }
+
+  .profilactic{
+    padding: 70px 0;
+    &__title{
+      font-size: 38px;
+    }
+    &__subtitle{
+      font-size: 15px;
+      line-height: 30px;
+      margin-bottom: 40px;
+    }
+    &__slider{
+      &-text{
+        margin: 100px 0 125px 0;
+        font-size: 16px;
+        max-width: 280px;
+      }
+    }
+    .slick-dots{
+      left: 27%;
+    }
+    .slick-next{
+      display: none;
+    }
+    .slick-prev{
+      display: none;
+    }
+  }
+  .doctors{
+    &__title{
+      font-size: 38px;
+    }
+    &__slider{
+      &-img{
+        background-size: cover;
+      }
+      &-play{
+        margin-top: -230px;
+      }
+    }
+    &__box{
+      &-title{
+        font-size: 32px;
+        text-align: center;
+      }
+    }
+     
+   
+    .slick-next,.slick-prev{
+      display: none;
+    }
+    .slick-dots{
+      right: 27%;
+      bottom: -5%;
+    }
+  }
+
+
+  .questions{
+  &__title{
+    font-size: 40px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+  &__subtitle{
+    font-size: 16px;
+  }
+  .accordion{
+    padding: 15px 0 20px 0;
+    .active{
+      &::before{
+        top: 20px;
+      }
+    }
+    &-header{
+      font-size: 20px;
+      line-height: 40px;
+      margin-left: 60px;
+      &::before{
+        top: 9px;
+        left: -52px;
+      }
+    }
+    &-body{
+      margin-left: 60px;
+      padding: 0 5px;
+      font-size: 13px;
+    }
+  }
+}
+
+  .reviews{
+    &__slider{
+      &-img{
+        left: 30%;
+      }
+      &-text{
+        padding-top: 75px;
+        margin-bottom: 0;
+      }
+    }
+    &__title{
+      font-size: 40px;
+    }
+    &__subtitle{
+      font-size: 16px;
+      padding: 0 5px;
+    }
+    .slick-dots{
+      right: 22%;
+      button{
+        margin: 0 8px;
+      }
+    }
+  }
+  .footer{
+    &__copyright{
+      padding-top: 20px;
+      &-text-1{
+        margin: 0;
+        font-size: 12px;  
+      }
+      &-text-2{
+        padding: 0;
+        font-size: 12px; 
+        &::after{
+          display: none;
+        }
+      }
     }
   }
 }

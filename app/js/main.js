@@ -33,7 +33,7 @@ $(function () {
     slidesToScroll: 1,
     arrows: true,
     dots: true,
-    centerMode: true,
+ 
     
   })
 
@@ -72,5 +72,6 @@ $('.menu__list').toggleClass('menu__list--active');
 });
 
 
+new WOW().init();
 
 });
