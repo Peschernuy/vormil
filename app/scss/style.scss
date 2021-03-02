@@ -181,6 +181,7 @@
     padding: 10px;
     @extend %rubik-400;
     font-size: 15px;
+    opacity: 80%;
     }
     
   }
@@ -188,8 +189,11 @@
   .slick-active{
     button{
     @extend %rubik-700;
-    color: #000;
-    border-right: 2px solid #fff;
+    color: #fff;
+    
+    font-weight: bold;
+    opacity: 100%;
+    font-size: 16px;
     }
   }
 }
@@ -197,6 +201,10 @@
 
 .fito{
   padding: 250px 0;
+  background-image: url('../images/fito-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   &__inner{
     display: flex;
     justify-content: space-between;
@@ -348,6 +356,7 @@
     padding: 10px;
     @extend %rubik-400;
     font-size: 15px;
+    opacity: 80%;
     }
     
   }
@@ -355,8 +364,10 @@
   .slick-active{
     button{
     @extend %rubik-700;
-    color: #000;
-    border-left: 2px solid #fff;
+    color: #fff;
+    opacity: 100%;
+    font-size: 16px;
+    
     }
   }
 }
@@ -368,6 +379,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+
 
  
   &__title{
@@ -521,17 +533,7 @@
   &__inner{
     display: flex;
     justify-content: space-between;
-    // position: relative;
-    // &::after{
-    //   content: '';
-    //   position: absolute;
-    //   height: 1px;
-    //   max-width: 940px;
-    //   width: 100%;
-    //   right: 0;
-    //   bottom: 455px;
-    //   background-image: url('../images/doctors-border.jpg')
-    // }
+    
   }
   &__slider{
     background-color: #f7fce8;
@@ -965,27 +967,6 @@ padding-bottom: 150px;
     background-image: none;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

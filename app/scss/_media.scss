@@ -89,12 +89,20 @@
   .fito{
     padding: 50px 10px;
     margin: 0 auto;
+    background-image: none;
     &__img{
       margin-bottom: 10px;
     }
     &__inner{
       flex-direction: column-reverse;
       
+    }
+  }
+  .footer{
+    &__btn{
+      &::after{
+     right: 3px;
+      }
     }
   }
 }
@@ -113,11 +121,11 @@
       align-items: center;
       justify-content: space-evenly;
       background-color: #fff;
-      max-width: 450px;
+      max-width: 1000px;
       width: 100%;
-      height: 550px;
-      right: 20%;
-      top: 1%;
+      height: 670px;
+      left: 0;
+      top: 150px;
       z-index: 10;
       transform: translateY(-200%);
       &.menu__list--active{
@@ -276,14 +284,7 @@
 }
 
 @media(max-width: 750px){
-  .menu{
-    &__list{
-      max-width: 320px;
-      width: 100%;
-      top: 100px;
-    
-    }
-  }
+
   .parasite{
     &__slider{
       &-inner{
@@ -472,23 +473,17 @@
 
 
 @media(max-width: 500px){
-  .menu{
-    &__list{
-      max-width: 240px;
-      width: 100%;
-      top: 105px;
-  
-      right: 15%;
-
+    .menu{
+      &__list{
+        height: 540px;
+      }
+      &__select{
+        display: none;
+      }
+      &__btn{
+        right: 10px;
+      }
     }
-    &__select{
-      display: none;
-    }
-    &__btn{
-      right: 2%;
-      top: 46px;
-    }
-  }
     .parasite{
     &__slider{
       &-box{
