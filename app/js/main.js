@@ -17,21 +17,21 @@ $(function () {
   $('.profilactic__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     dots: true
     })
 
   $('.doctors__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     dots: true
   })
 
   $('.reviews__slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     dots: true,
  
     
